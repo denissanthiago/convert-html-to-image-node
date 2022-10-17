@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style type="text/css">
+
+      /* RESET STYLES */
+      * { box-sizing: border-box; }
+      html, body, div, span, applet, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, acronym, address, big, cite, code,
+      del, dfn, em, img, ins, kbd, q, s, samp,
+      small, strike, strong, sub, sup, tt, var,
+      b, u, i, center,
+      dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td,
+      article, aside, canvas, details, embed,
+      figure, figcaption, footer, header, hgroup,
+      menu, nav, output, ruby, section, summary,
+      time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+
+      /* HTML5 display-role reset for older browsers */
+      article, aside, details, figcaption, figure,
+      footer, header, hgroup, menu, nav, section {
+          display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol, ul {
+        list-style: none;
+      }
+
+      /* HTML5 styles template */
+      .main_container {
+        width: 1126px;
+        background-color: #FFFFFF;
+        position: relative;
+          margin: 0 !important;
+      }
+
+      .main_container__header {
+        box-sizing: border-box;
+        width: 100%;
+        background-color: #F8F9FF;
+        padding-top: 69px;
+      }
+
+      .main_container__section {
+        margin: 67px 56px 0;
+      }
+
+      .header__title_name {
+        text-align: center;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 67px;
+        text-transform: uppercase;
+        font-family: 'DM Sans', sans-serif;
+      }
+
+      .header__title_description {
+        text-align: center;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 72px;
+        max-width: 722px;
+        margin: auto;
+        font-family: 'DM Sans', sans-serif;
+      }
+      .header__title_image {
+        display: block;
+        margin: 23px auto 0;
+      }
+
+      .section_container {
+        box-sizing: border-box;
+        border: 3px solid #D9D9D9;
+        border-radius: 22px;
+      }
+
+      .section_container__order_name_content {
+        border-bottom: 3px solid #D9D9D9;
+        padding: 29px 33px 25px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .order_name_content__title {
+        align-self: center;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 59px;
+        font-family: 'DM Sans', sans-serif;
+      }
+
+      .order_name_content__budge {
+        background-color: #E4EAFD;
+        font-size: 32px;
+        line-height: 50px;
+        text-align: center;
+        min-width: 500px;
+        border-radius: 280px;
+        font-family: 'DM Sans', sans-serif;
+      }
+
+      .section_container__product_content {
+        padding: 29px 33px 25px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, auto);
+        border-bottom: 3px solid #D9D9D9;
+      }
+
+      .product_content__img {
+        grid-column: 1/2;
+        width: 136px;
+          height: 136px;
+          min-width: 136px;
+      }
+
+      .product_content__details {
+        grid-column: 2/4;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+      }
+
+      .product_content__title {
+        display: block;
+        font-weight: 400;
+        font-size: 32px;
+        color: #4B556C;
+        margin-bottom: 4px;
+        font-family: 'DM Sans', sans-serif;
+          min-width: 420px;
+      }
+
+      .product_content__description {
+        display: block;
+        font-weight: 500;
+        font-size: 28px;
+        color: #0F131C;
+        font-family: 'DM Sans', sans-serif;
+      }
+
+      .product_content__quantity {
+        text-align: end;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 67px;
+        align-self: center;
+        color: #4B556C;
+        font-family: 'DM Sans', sans-serif;
+        margin-right: 10px;
+      }
+
+      .product_content__price {
+        text-align: end;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 67px;
+        align-self: center;
+        color: #0F131C;
+        font-family: 'DM Sans', sans-serif;
+      }
+      .section_container__overview {
+        padding: 24px 56px 26px;
+      }
+
+      .overview__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        line-height: 89px;
+      }
+
+      .overview__item__bottom {
+        margin-bottom: 16px;
+      }
+
+      .overview__item__text {
+        font-weight: 400;
+        font-size: 32px;
+        color: #0F131C;
+        font-family: 'DM Sans', sans-serif;
+      }
+
+      .overview__item__text_bold {
+        font-weight: 700;
+      }
+
+      .overview__item__text_color_danger {
+        color: #FF5467;
+      }
+
+    </style>
+  </head>
+<body style="width: 1126px;">
+  <main class="main_container">
+    <header class="main_container__header">
+      <h5 class="header__title_name">HOLA {{ name }}</h5>
+      <h1 class="header__title_description">Estos son los detalles de tu pedido</h1>
+      <img class="header__title_image" src="https://saleor-s3.cuida.pe/images/headerOrderSummaryImg.png" alt="image header summary">
+    </header>
+    <section class="main_container__section">
+      <div class="section_container">
+        {{#if productsSubscription.length}}
+          <div class="section_container__order_name_content">
+            <span class="order_name_content__title">TU SUSCRIPCIÓN</span>
+            <div class="order_name_content__budge">Recíbelo y págalo cada mes</div>
+          </div>
+          {{#each productsSubscription}}
+            <div class="section_container__product_content">
+              <img class="product_content__img" src={{ image }} alt="product item">
+              <div class="product_content__details">
+                <span class="product_content__title">{{ name }}</span>
+                <span class="product_content__description">{{ detail }}</span>
+              </div>
+              <div class="product_content__quantity">
+                x{{ quantity }}
+              </div>
+              <div class="product_content__price">
+                S/{{ price }}
+              </div>
+            </div>
+          {{/each}}
+        {{/if}}
+        {{#if productsSinglePurchase.length}}
+          <div class="section_container__order_name_content">
+            <span class="order_name_content__title">TU COMPRA</span>
+          </div>
+          {{#each productsSinglePurchase}}
+          <div class="section_container__product_content">
+            <img class="product_content__img" src={{ image }} alt="product item">
+            <div class="product_content__details">
+              <span class="product_content__title">{{ name }}</span>
+              <span class="product_content__description">{{ detail }}</span>
+            </div>
+            <div class="product_content__quantity">
+              x{{ quantity }}
+            </div>
+            <div class="product_content__price">
+              S/{{ price }}
+            </div>
+          </div>
+          {{/each}}
+        {{/if}}
+        <div class="section_container__overview">
+          <div class="overview__item overview__item__bottom">
+            <span class="overview__item__text">Subtotal:</span>
+            <span class="overview__item__text">S/{{ subtotal  }}</span>
+          </div>
+          <div class="overview__item overview__item__bottom">
+            <span class="overview__item__text">Delivery:</span>
+            <span class="overview__item__text">
+              {{#if isFreeDelivery}}
+                <span>Gratis</span>
+              {{else}}
+                <span>S/{{ delivery }}</span>
+              {{/if}}
+            </span>
+          </div>
+          <div class="overview__item overview__item__bottom">
+            <span class="overview__item__text overview__item__text_color_danger">Descuento:</span>
+            <span class="overview__item__text overview__item__text_color_danger">-S/{{ discount }}</span>
+          </div>
+          <div class="overview__item">
+            <span class="overview__item__text overview__item__text_bold">Total:</span>
+            <span class="overview__item__text overview__item__text_bold">S/{{ total  }}</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div style="height: 83px"></div>
+  </main>
+</body>
+</html>
